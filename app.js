@@ -1,5 +1,10 @@
 "use strict";
-const {log} = require('./logger')
-const {user} = require('./user')
+import log from './logger.js'
+import { sideKick as jarJar,
+  mainCharacter as quiGon, 
+  characters }  from './starWarsCharacters.js'
 
-log(user.name)
+characters.forEach(c => log(c))
+
+log(jarJar)
+log(quiGon)
