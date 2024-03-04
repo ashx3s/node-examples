@@ -1,3 +1,5 @@
 "use strict";
+const {log} = require('./logger')
+const {user} = require('./user')
 
-console.log('hello world')
+log(user.name)
